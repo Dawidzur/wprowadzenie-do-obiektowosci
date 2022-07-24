@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Car audi = new Car ("Red", 5, "A4", false);
+        Car audi = new Car("Red", 5, "A4", false);
         System.out.println(audi.getAutomaticGearbox());
         audi.setAutomaticGearbox(true);
         System.out.println(audi.getAutomaticGearbox());
@@ -41,11 +41,24 @@ public class Main {
         Kalkulator calc = new Kalkulator();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Prosze podac liczbe");
-        int firstVariable = scanner.nextInt();
-        System.out.println("Prosze podac druga liczbe");
-        int secondVariable = scanner.nextInt();
-        System.out.println("Twoj wynik to");
-        System.out.println("Twoj wynik to "+calc.add(firstVariable, secondVariable));
+        int x = scanner.nextInt();
+        System.out.println("Podaj jaka operacje chcesz wykonac wpisujac + - *");
+        String znak = scanner.next();
+        System.out.println("Podaj druga liczbe");
+        int y = scanner.nextInt();
 
+        switch (znak) {
+            case "+":
+                System.out.println(calc.add(x, y));
+                break;
+            case "-":
+                System.out.println(calc.sub(x, y));
+                break;
+            case "*":
+                System.out.println(calc.multiply(x, y));
+                break;
+            case "/":
+                System.out.println(calc.);
+        }
     }
 }
