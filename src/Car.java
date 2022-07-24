@@ -17,4 +17,28 @@ public class Car {
     public boolean getAutomaticGearbox(){
         return automaticGearbox;
     }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setDoorsAmount(int doorsAmount) {
+        this.doorsAmount = doorsAmount;
+    }
+    public int getDoorsAmount() {
+        return doorsAmount;
+    }
+
 }
